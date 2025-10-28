@@ -355,7 +355,8 @@ export function Inbox({ onNavigate, t }: InboxProps) {
           <DialogFooter className="flex-col gap-2">
             <Button 
               onClick={() => setShowReplyDialog(true)}
-              className="w-full bg-primary hover:bg-[#2563EB] text-primary-foreground rounded-xl"
+              className="bg-primary hover:bg-[#2563EB] text-primary-foreground rounded-xl"
+              style={{ width: '50%' }}
             >
               <Heart className="w-4 h-4 mr-2" />
               {t.inbox.sendThankYou}
@@ -363,7 +364,8 @@ export function Inbox({ onNavigate, t }: InboxProps) {
             <Button
               onClick={() => setSelectedMessage(null)}
               variant="outline"
-              className="w-full rounded-xl"
+              className="rounded-xl"
+              style={{ width: '50%' }}
             >
               {t.common.close}
             </Button>
